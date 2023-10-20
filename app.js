@@ -2,10 +2,14 @@
 
 const bulbHTML = document.querySelector("#bulb");
 
+// bulbHTML.addEventListener('click', () => {
+//     if (bulbHTML.className === 'bulb-off') {
+//         bulbHTML.className = 'bulb-on';
+//     } else {
+//         bulbHTML.className = 'bulb-off'
+//     }
+// })
+
 bulbHTML.addEventListener('click', () => {
-    if (bulbHTML.className === 'bulb-off') {
-        bulbHTML.className = 'bulb-on';
-    } else {
-        bulbHTML.className = 'bulb-off'
-    }
+    bulbHTML.classList.toggle('bulb-on');
 })
