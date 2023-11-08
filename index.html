@@ -8,10 +8,12 @@
     <title>Light Switching</title>
 </head>
 <body>
-    <div class="canvas">
-        <h1>Turn the light on and off </br>by clicking the bulb!</h1>
-        <div id="bulb" class="bulb-off"></div>
+    <div id="app">
+        <div class="canvas">
+            <h1>Turn the light on and off </br>by clicking the bulb!</h1>
+            <div @click="isTrue = !isTrue" id="bulb" :class="{ 'bulb-on': isTrue, 'bulb-off': !isTrue}"></div>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
